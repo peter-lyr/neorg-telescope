@@ -113,14 +113,14 @@ return function(opts)
                     local displayer = entry_display.create({
                         separator = ": ",
                         items = {
-                            { width = 30 },
+                            { width = 80 },
                             { remaining = true },
                         },
                     })
                     local function make_display(ent)
                         if entry.file then
                             return displayer({
-                                { ent.file:sub(-30, -1), "NeorgLinkFile" },
+                                { ent.file:sub(-80, -1), "NeorgLinkFile" },
                                 { ent.ordinal, "NeorgLinkText" },
                             })
                         else
